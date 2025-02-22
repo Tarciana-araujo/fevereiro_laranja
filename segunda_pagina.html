@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Ajudar Pessoas com Leucemia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" >
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #df7d44;
+            color: white;
+            justify-content: space-evenly; /* espaços entre os quadrados*/
+            height: 100vh;
+            align-items: center;
+        }
+        .imagem {
+            width: 100%;
+            height: 400px;
+            background-image: url("Fevereiro-Laranja-Artigo-1.webp");
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo quando não houver espaço */
+            justify-content: center; /* Centraliza os quadrados */
+            gap: 20px; /* Adiciona espaçamento entre os quadrados */
+        }
+
+        h1 {
+            font-family:'Montserrat',sans-serif;
+            font-weight: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px; /* Espaço entre o texto e o ícone */
+            font-size: 30px;
+        }
+        
+        h2 {
+            
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            margin-top: 20px;
+            
+        }
+        p {
+            font-size: 20px;
+            font-style: oblique;
+        }
+        .quadrado {
+            width: 400px;
+            height: 500px;
+            margin: 10px;
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease;  /* Suaviza o aumento do quadrado */
+
+        }
+        .quadrado img {
+            width: 100%; /* Mantém todas as imagens com a mesma largura */
+            height: 50%; /* Mantém todas as imagens com a mesma altura relativa ao quadrado */
+            object-fit: cover; /* Evita distorção e mantém o enquadramento correto */
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .quadrado:hover {
+            transform: scale(1.1); /* Aumenta o quadrado inteiro */
+        }
+        .quadrado h2 {
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 2px;
+            padding: 10px;
+            margin-top: 0px;
+            color: white;
+            font-size: 12px;
+            background-color: #24407c;
+
+        } 
+        .quadrado p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 10px;
+            font-style: oblique;
+        }   
+        @media screen and (max-width: 600px) { /*para detlas menores, como smatphones*/
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;  /* Faz com que os quadrados empilhem em telas pequenas */
+                align-items: center;  /* Centraliza os quadrados */
+            }
+            
+            .quadrado {
+                width: 90%;  /* Reduz a largura dos quadrados em telas pequenas */
+                height: auto;  /* Ajusta a altura automaticamente */
+            }
+            
+            .quadrado:hover {
+                transform: scale(1.05);  /* Reduz o efeito de aumento em telas pequenas */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="imagem"></div>
+
+    <h1>Bem Vindos!<i class="bi bi-emoji-wink"></i></h1>
+
+    <h2>Como você pode ajudar</h2>
+
+    <p>Existem várias maneiras de ajudar pessoas que enfrentam a leucemia. Aqui estão algumas formas de apoio:</p>
+
+    <div class="container">
+        
+        <div class="quadrado"> 
+            <h2>1. Doação de Sangue e Medula Óssea</h2>
+            <p>A doação de sangue e medula óssea pode salvar vidas.</p>
+            <p>Para ser um doador de medula, cadastre-se no <a href="https://www.gabriel.org.br/conteudo/doacao-de-medula/?gad_source=1&gclid=CjwKCAiAiOa9BhBqEiwABCdG89NswyyCwvn0ZaKrTIBg9RXAIF9gCjSWOUNLKpdWgAdf5f1fOHsrfxoCGO8QAvD_BwE">REDOME</a>(Registro Nacional de Doadores de Medula Óssea).</p>
+            <img src="FOTOS DO PROJETO/DOAÇÃO.webp" alt="Doação"> 
+            
+        </div>
+        
+        <div class="quadrado">
+
+            <h2>2. Apoio Emocional</h2>
+            <p>O suporte emocional é essencial.</p>
+            <p> Demonstre carinho, ofereça companhia e ajude a manter a esperança de quem está em tratamento. </p>
+            <img src="FOTOS DO PROJETO/APOIO EMOCIONAL.webp" alt="apoio">
+        </div>
+
+        <div class="quadrado">
+            <h2>3. Participação em Campanhas</h2>
+            <p>Apoie e divulgue campanhas de conscientização, como o <strong>Fevereiro Laranja</strong>, para incentivar doações e pesquisas sobre a doença.</p>
+            <img src="FOTOS DO PROJETO/campanhas.webp" alt="campanhas">
+        </div>
+        
+        
+        <div class="quadrado"> 
+            <h2>4. Doação para Instituições</h2>
+            <p>Muitas ONGs oferecem suporte a pacientes com leucemia.</p>
+            <p>Faça doações para ajudar no tratamento e na pesquisa contra a doença.</p>
+            <img src="FOTOS DO PROJETO/ONGS.webp" alt="ongs">
+        </div>
+
+        <div class="quadrado">
+            <h2>5. Seja Voluntário</h2>
+            <p>Voluntariar-se em hospitais e centros de apoio pode fazer uma grande diferença na vida de quem enfrenta essa batalha.</p>
+            <img src="FOTOS DO PROJETO/volutarios.webp" alt="volutarios">
+        </div>
+        
+        
+    </div>
+
+    <p>Pequenos gestos podem mudar vidas. Junte-se à causa e ajude a combater a leucemia!</p>
+</body>
+</html>
